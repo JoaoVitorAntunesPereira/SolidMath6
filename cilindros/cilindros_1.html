@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/a1.css" rel="stylesheet" />
+        <title>Web_teste_4</title>
+    </head>
+    <body>
+        <div class="main_2">
+            <div class="obj_conteiner_1">
+                <div class="obj_title_1">Cilíndros</div>
+                <div class="content_conteiner_1">
+                    <div class="config_1">
+                        <div class="config_content_conteiner_items_1">
+                            <div class="config_title_1">Configurações dos parâmetros</div>
+                            <br />
+                            <br />
+                            <div id="idLabel_1" class="label_1">Raio da base: r = 1;</div>
+                            <input id="idRange_1" type="range" class="inp_raio_2" min="1" max="100" value="50" />
+                            <br />
+                            <br />
+                            <div id="idLabel_2" class="label_1">Altura: h = 1;</div>
+                            <input id="idRange_2" type="range" class="inp_h_1" min="1" max="100" value="50" />
+                            <br />
+                            <br />
+                            <div id="idLabel_3" class="label_1">Ângulo da seção: θ = 360 deg;</div>
+                            <input id="idRange_3" type="range" class="inp_an_1" min="1" max="360" value="360" />
+                        </div>
+                    </div>
+                    <div id="idD3_viewer_1" class="d3_viewer_1"></div>
+                </div>
+                <div class="values_conteiner_1">
+                    <div class="values_title_1">Relações</div>
+                    <br />
+                    <br />
+                    <div id="idOutLabel_1" class="outLabels_1">Área da base: Ab = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ r<power_1>2</power_1><s></s>= <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><r1_1></r1_1><power_1>2</power_1><s></s>=<s></s><Ab1_1></Ab1_1>;</div>
+                    <br />
+                    <br />
+                    <div id="idOutLabel_2" class="outLabels_1">Área lateral total: Alt = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360º</di1></frac1><s></s> ∙ 2 ∙ π ∙ r ∙ h = <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ 2 ∙ π ∙ <s></s><r1_1></r1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s>=<s></s><Alt1_1></Alt1_1>;</div>
+                    <br />
+                    <br />
+                    <div id="idOutLabel_3" class="outLabels_1">Área total: At = 2 ∙ Ab + Alt = 2 ∙ <s></s><Ab1_1></Ab1_1><s></s> + <s></s><Alt1_1></Alt1_1><s></s> = <s></s><At1_1></At1_1>;</div>
+                    <br />
+                    <br />
+                    <div id="idOutLabel_4" class="outLabels_1">Volume total: Vt = Ab ∙ h = <s></s><Ab1_1></Ab1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Vt1_1></Vt1_1>;</div>
+                </div>
+                <br />
+            </div>
+        </div>
+        <script src="../scripts/cilindros_1.js" type="module"></script>
+    </body>
+</html>

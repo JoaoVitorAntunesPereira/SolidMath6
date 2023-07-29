@@ -1,0 +1,80 @@
+Esta é uma breve documentação do sistema em questão (SolidMath):
+
+Sumário: 
+
+    -1. Introdução;
+    2. Planejamento interno;
+    3. Estrutura das pastas e arquivos;
+    4. Estrutura básica html;
+        4.1. class="main_1" e class="main_2";
+    5. Estilização;
+    -6. Scripts;
+
+1. Introdução: 
+
+    //
+
+2. Planejamento interno: 
+
+    2.1. Adicionar o tópico "Apresentação";
+
+    2.2. Adicionar um bloco de "Definição" a cada um dos outros tópicos 
+(exceto ao de "Apresentação");
+
+    2.3. Adicionar as "Relações" a cada um dos sólidos (exceto aos poliedros de Platão);
+
+    2.4. Refatoração e documentação dos códigos, além da criação de um sistema de 
+versionamento do sistema;
+
+    2.5. Possíveis incrementos: 
+
+        2.5.1. Esferas;
+
+        2.5.2. Seção de recorte de pirâmides;
+
+        2.5.3. Seção de recorte de cones;
+
+3. Estrutura das pastas e arquivos: 
+
+    A pasta principal contém um conjunto de arquivos:
+
+        "doc1.txt";
+        /* É o próprio arquivo em questão, onde encontra-se a documentação do sistema. */
+
+        "index.html";
+        /* É o arquivo que contém a página principal (e é exibida ao longo de todo 
+        o uso do sistema). */
+
+        "main.js";
+        /* É o arquivo .js principal do servidor node.js. Atualmente não é utilizado. */
+
+        "package.json";
+        /* Contém os metadados do sistema (nome, versão, dependências, etc...). */
+
+    Além disso, ela contém uma série de pastas: 
+
+        "./node_modules/";
+        /* Contém as bibliotecas necessárias ao sistema */
+
+        "./scripts/";
+        /* Contém os arquivos de scripts programáveis, dinamizadores das 
+        páginas (todas elas). */
+
+        "./styles/";
+        /* Contém o(s) arquivo(s) de estilização do html das páginas (todas elas) 
+        do sistema. */
+
+        Todas as demais pastas dentro da principal contém suas respectivas páginas, 
+    as quais são exibidas na página principal por meio da alternância do conteúdo 
+    de um só iframe.
+
+4. Estrutura básica html: 
+
+    4.1. class="main_1" e class="main_2": 
+
+        É o primeiro filho do elemento <body> de cada uma das páginas. Serve como 
+    um conteiner adicional para que se faça possível um melhor manejo do design das 
+    páginas, mas atua como se fosse o próprio elemento <body>.
+        Deve ficar abaixo do header, se adicionado.
+
+    4.2. 
