@@ -150,14 +150,26 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    display: flex;
     flex-wrap: wrap;
     grid-row-gap: 13px;
     grid-column-gap: 13px;
     
 }
 
-.obj_conteiner_2 div.divsPlat{
+div.paralelepipedos div.divsDefs, div.piramides div.divsDefs, div.cilindros div.divsDefs, div.cones div.divsDefs{
+    background-color: rgb(28, 31, 43);
+    border-radius: 10px;
+    transition: .4s;
+    width: 40%;
+    flex-grow: 1;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+div.paralelepipedos div#defParalelepipedos{
+    width: 100%;
+}
+
+.obj_conteiner_2 div.divsDefs{
     background-color: rgb(28, 31, 43);
     border-radius: 10px;
     transition: .4s;
@@ -166,7 +178,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0);
 }
 
-.obj_conteiner_2 div.divsPlat:hover{
+.obj_conteiner_2 div.divsDefs:hover{
     box-shadow: 10px 5px 5px rgba(255, 255, 255, 0.116);
     border: 1px solid rgba(255, 255, 255, 0.274);
 }
@@ -336,7 +348,20 @@ input[type="range"]:focus{
 }
 
 .values_conteiner_1{
-    width: 90%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    font-size: 1.2em;
 }
 
 .values_title_1{
@@ -345,6 +370,14 @@ input[type="range"]:focus{
     font-size: 22px;
     text-align: center;
     margin-top: 4vh;
+    --h_size: 60px;
+
+    width: 100%;
+    height: var(--h_size);
+    line-height: var(--h_size);
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 power_1{
@@ -356,12 +389,26 @@ power_1{
     margin-bottom: 8px;
 }
 
+
+
 .outLabels_1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: rgb(28, 31, 43);
+    border-radius: 5px;
+    transition: .4s;
+    flex-grow: 1;
+    border: 1px solid rgba(255, 255, 255, 0);
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.outLabels_1:hover{
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.116);
+    border: 1px solid rgba(255, 255, 255, 0.274);
 }
 
 s{
@@ -479,7 +526,7 @@ img#logoIF{
     align-items: center;
 }
 
-div.divsPlat{
+div.divsDefs{
     margin: 0;
 }
 
@@ -495,9 +542,207 @@ i.bx{
     margin: 15px;
 }
 
-div.header{
-    background-color: #0066ff;
-    height: 60px;
-    width: 100vw;
-    position: absolute;
+
+div#logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    transform-style: preserve-3d;
+    grid-gap: 25px;
+    width: 400px;
+    position: relative;
+    padding: 30px;
+    height: 500px;
 }
+
+div#logo div.cardLogo{
+    background-color: var(--title-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+div#logo div.cardLogo:nth-child(1){
+    background: radial-gradient(circle at 30% 30%, rgba(255,137,137,1) 0%, rgba(255,0,0,1) 25%, rgba(139,0,0,1) 39%);
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: sphereRotate 4s infinite;
+}
+
+div#logo div.cardLogo:nth-child(1) .cube-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+div#logo div.cardLogo div.internal{
+    border-radius: 0;
+    background-color: rgba(42,110,67,1);
+    width: 98%;
+    height: 98%;
+    margin: 1px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+    animation: cubeRotate 4s infinite;
+}
+
+@keyframes sphereRotate{
+    0%{
+        background-position: 30% 30%;
+    }
+    25%{
+        background-position: 30% 0%;
+    }
+    50%{
+        background-position: 0% 30%;
+    }
+    75%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 30% 30%;
+    }
+}
+
+@keyframes cubeRotate{
+    0%{
+        transform: rotateX(15deg) rotateY(-15deg);
+    }
+    25%{
+        transform: rotateX(-15deg) rotateY(-15deg);
+    }
+    50%{
+        transform: rotateX(15deg) rotateY(15deg);
+    }
+    75%{
+        transform: rotateX(-15deg) rotateY(15deg);
+    }
+    100%{
+        transform: rotateX(15deg) rotateY(-15deg);
+    }
+}
+
+
+.cube-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--title-color);
+    /* border: 2px solid black; */
+    border-radius: 10px;
+}
+
+.cube-side:nth-child(1) {
+    transform: rotateY(0deg) translateZ(3.1em);
+    background: rgb(69,171,106);
+    background: radial-gradient(circle, rgba(69,171,106,1) 16%, rgba(55,135,84,1) 94%, rgba(42,110,67,1) 100%); 
+}
+.cube-side:nth-child(2) {
+    transform: rotateY(90deg) translateZ(3.1em);
+    background-image: linear-gradient(to right,#2a6e43, #1c4b2d);
+}
+.cube-side:nth-child(3) {
+    transform: rotateY(180deg) translateZ(3.1em);
+    background-image: linear-gradient(to left,#2a6e43, #1c4b2d);
+    background-color: #1c4b2d;
+}
+.cube-side:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(3.1em);
+    background-image: linear-gradient(to left,#2a6e43, #1c4b2d);
+}
+.cube-side:nth-child(5) {
+    transform: rotateX(-90deg) translateZ(3.1em);
+    background-image: linear-gradient(to bottom,#2a6e43, #1c4b2d);
+}
+.cube-side:nth-child(6) {
+    transform: rotateX(90deg) translateZ(3.1em);
+    background-image: linear-gradient(to top,#2a6e43, #1c4b2d);
+}
+
+div.divApresentacao{
+    width: 90%;
+    margin-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    height: 100vh;
+}
+
+div#apresentacao{
+    width: 65%;
+    padding: 60px;
+    padding-top: 0;
+}
+
+div#apresentacao h2{
+    font-size: 6em;
+    color: var(--subtitle-color-2
+    );
+}
+
+div#apresentacao div.titulo p{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+div.tituloApresentacao{
+    font-size: 4em;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+div.initCards{
+    background-color: rgb(16, 17, 22);
+    border-radius: 10px;
+    transition: .4s;
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin-top: 60px;
+    padding: 20px;
+}
+
+div.initCards p{
+    font-size: 1.5em;
+}
+
+div.titulo{
+    width: 500px;
+}
+
+.borderInitCards {
+    background: #1D1F20;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .borderInitCards:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: calc(100% + 6px);
+    width: calc(100% + 6px);
+    background: linear-gradient(45deg, var(--title-color), var(--subtitle-color-2),var(--subtitle-color));
+    border-radius: 10px;
+    z-index: -1;
+    animation: animatedgradient 8s ease alternate infinite;
+    background-size: 600% 600%;
+  }
+  @keyframes animatedgradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  

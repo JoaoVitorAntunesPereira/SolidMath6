@@ -8,6 +8,29 @@
     </head>
     <body>
         <div class="main_2">
+            <div class="obj_conteiner_2 cilindros">
+                <div class="obj_title_1">Cilíndros</div>
+                <div id="cilindrosDef" class="divsDefs">
+                    <h2>Definição</h2>
+                    <p>Os cilindros são sólidos geométricos tridimensionais formados por duas bases congruentes que são círculos paralelos entre si e pelos segmentos de reta com extremidades em cada uma das bases.</p>
+                </div>
+                <div id="cilindrosClass" class="divsDefs">
+                    <h2>Classificação</h2>
+                    <p>Os cilindros só podem ser classificados em cilindros retos ou oblíquos, já que a única alteração que pode ser feita em seus corpos são na sua altura ou no raio de sua base</p>
+                </div>
+                <div id="cilindrosElementos" class="divsDefs">
+                    <h2>Elementos do Cilindro</h2>
+                    <p>Os principais elementos de um cilindro são suas bases, que são círculos idênticos, e a superfície lateral, que é formada por uma região curva composta por retas paralelas que conectam os pontos correspondentes das bases.</p>
+                </div>
+                <div id="cilindrosSuperficie" class="divsDefs">
+                    <h2>Área da Superfície</h2>
+                    <p>A área da superfície de um cilindro é a soma da área das duas bases e da área da superfície lateral. A fórmula para a área da superfície do cilindro é A = 2πr(r + h), onde r é o raio da base e h é a altura do cilindro.</p>
+                </div>
+                <div id="cilindrosAplicacoes" class="divsDefs">
+                    <h2>Aplicações</h2>
+                    <p>Os cilindros têm diversas aplicações práticas, como em latas, canos, garrafas, barris, pilares e rolos de papel. Além disso, são utilizados em áreas como engenharia, indústria, arquitetura e fabricação.</p>
+                </div>
+            </div>
             <div class="obj_conteiner_1">
                 <div class="obj_title_1">Cilíndros</div>
                 <div class="content_conteiner_1">
@@ -16,15 +39,15 @@
                             <div class="config_title_1">Configurações dos parâmetros</div>
                             <br />
                             <br />
-                            <div id="idLabel_1" class="label_1">Raio da base: r = 1;</div>
+                            <div id="idLabel_1" class="label_1">Raio da base: r = 1</div>
                             <input id="idRange_1" type="range" class="inp_raio_2" min="1" max="100" value="50" />
                             <br />
                             <br />
-                            <div id="idLabel_2" class="label_1">Altura: h = 1;</div>
+                            <div id="idLabel_2" class="label_1">Altura: h = 1</div>
                             <input id="idRange_2" type="range" class="inp_h_1" min="1" max="100" value="50" />
                             <br />
                             <br />
-                            <div id="idLabel_3" class="label_1">Ângulo da seção: θ = 360 deg;</div>
+                            <div id="idLabel_3" class="label_1">Ângulo da seção: θ = 360 deg</div>
                             <input id="idRange_3" type="range" class="inp_an_1" min="1" max="360" value="360" />
                         </div>
                     </div>
@@ -32,20 +55,11 @@
                 </div>
                 <div class="values_conteiner_1">
                     <div class="values_title_1">Relações</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_1" class="outLabels_1">Área da base: Ab = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ r<power_1>2</power_1><s></s>= <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><r1_1></r1_1><power_1>2</power_1><s></s>=<s></s><Ab1_1></Ab1_1>;</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_2" class="outLabels_1">Área lateral total: Alt = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360º</di1></frac1><s></s> ∙ 2 ∙ π ∙ r ∙ h = <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ 2 ∙ π ∙ <s></s><r1_1></r1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s>=<s></s><Alt1_1></Alt1_1>;</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_3" class="outLabels_1">Área total: At = 2 ∙ Ab + Alt = 2 ∙ <s></s><Ab1_1></Ab1_1><s></s> + <s></s><Alt1_1></Alt1_1><s></s> = <s></s><At1_1></At1_1>;</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_4" class="outLabels_1">Volume total: Vt = Ab ∙ h = <s></s><Ab1_1></Ab1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Vt1_1></Vt1_1>;</div>
+                    <div id="idOutLabel_1" class="outLabels_1">Área da base: Ab = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ r<power_1>2</power_1><s></s>= <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><r1_1></r1_1><power_1>2</power_1><s></s>=<s></s><Ab1_1></Ab1_1></div>
+                    <div id="idOutLabel_2" class="outLabels_1">Área lateral total: Alt = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360º</di1></frac1><s></s> ∙ 2 ∙ π ∙ r ∙ h = <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ 2 ∙ π ∙ <s></s><r1_1></r1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s>=<s></s><Alt1_1></Alt1_1></div>
+                    <div id="idOutLabel_3" class="outLabels_1">Área total: At = 2 ∙ Ab + Alt = 2 ∙ <s></s><Ab1_1></Ab1_1><s></s> + <s></s><Alt1_1></Alt1_1><s></s> = <s></s><At1_1></At1_1></div>
+                    <div id="idOutLabel_4" class="outLabels_1">Volume total: Vt = Ab ∙ h = <s></s><Ab1_1></Ab1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Vt1_1></Vt1_1></div>
                 </div>
-                <br />
             </div>
         </div>
         <script src="../scripts/cilindros_1.js" type="module"></script>

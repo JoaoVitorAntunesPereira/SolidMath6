@@ -52,7 +52,7 @@ function ty_item_2_onClick(button_id)
             e.src = "./poliedros_platao/poliedros_platao_1.html";
             break;
         case "item_3":
-            e.src = "./paralelepipedos/paralelepipedos_1.html";
+            e.src = "./prismas/prismas.html";
             break;
         case "item_4":
             e.src = "./piramides/piramides_1.html";

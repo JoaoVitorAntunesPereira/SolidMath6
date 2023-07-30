@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/a1.css" rel="stylesheet" />
+        <title>Web_teste_4</title>
+    </head>
+    <body>
+        <div class="main_2">
+            <div class="obj_conteiner_2 paralelepipedos">
+                <div class="obj_title_1">Prismas</div>
+                <!-- <div id="defParalelepipedos" class="divsDefs">
+                    <h2>Definição</h2>
+                    <p>Os paralelepípedos são sólidos geométricos tridimensionais que possuem seis faces retangulares, onde cada face oposta é paralela e congruente. Eles têm a forma de um prisma retangular, com ângulos retos entre as faces, o que torna todas as suas arestas perpendiculares. Cada paralelepípedo possui três pares de faces opostas, sendo que cada par é paralelo entre si.</p>
+                </div>
+                <div id="nomeParalelepipedos" class="divsDefs">
+                    <h2>Nome</h2>
+                    <p>Recebem o nome de "paralelepípedos" devido à sua forma prismática com lados paralelos.</p>
+                </div>
+                <div id="facesParalelepipedos" class="divsDefs">
+                    <h2>Número de faces</h2>
+                    <p>Cada paralelepípedo tem um total de seis faces retangulares. Então o que pode-se variar em seu corpo são suas dimensões, como tamanho do lado e do raio da base, da altura e do apótema da base</p>
+                </div>
+                <div id="vertParalelepipedos" class="divsDefs">
+                    <h2>Vértices e arestas</h2>
+                    <p>Os paralelepípedos possuem o mesmo número de vértices e arestas em todas as suas faces, sendo: 8 Vértices e 12 Arestas</p>
+                </div>
+                <div id="simetriaParalelepipedos" class="divsDefs">
+                    <h2>Simetria</h2>
+                    <p>Os paralelepípedos exibem simetria em relação aos seus eixos, devido à igualdade das faces opostas.</p>
+                </div>
+                <div id="paralelepipedosImportancia" class="divsDefs">
+                    <h2>Importância</h2>
+                    <p>Os paralelepípedos têm diversas aplicações práticas, como embalagens, construções, cálculos de volume e mais.</p>
+                </div> -->
+                
+                <div id="prismasDef" class="divsDefs">
+                    <h2>Definição</h2>
+                    <p>Prismas são sólidos geométricos tridimensionais que possuem duas bases congruentes e paralelas, conectadas por faces retangulares ou quadradas, formando lados retangulares ou quadrados. Eles são classificados de acordo com o formato de suas bases.</p>
+                </div>
+                <div id="prismasNome" class="divsDefs">
+                    <h2>Nome</h2>
+                    <p>O termo "prisma" deriva da palavra grega "prísmos," significando "serrado" ou "cortado." Prismas são sólidos que parecem ter sido cortados por planos paralelos às suas bases, gerando faces laterais retangulares ou quadradas, conforme a forma das bases.</p>
+                </div>
+                <div id="prismasFaces" class="divsDefs">
+                    <h2>Número de faces</h2>
+                    <p>Os prismas possuem um número mínimo de cinco faces, sendo sempre duas delas as das bases, já o número de faces laterais é variável, e depende do formato da base. pode-se obter o número de faces a partir de um simples equação, que você verá abaixo.</p>
+                </div>
+                <div id="prismasArestasVertices" class="divsDefs">
+                    <h2>Arestas e Vértices</h2>
+                    <p>Os prismas possuem arestas retas que conectam as arestas das bases e vértices onde as arestas se encontram. O número de arestas e vértices também pode ser opbtido através de equações, veja abaixo.</p>
+                </div>
+                <div id="prismasRegsIrregs" class="divsDefs">
+                    <h2>Prisma Regular e Irregular</h2>
+                    <p>Prismas regulares são aqueles que possuem bases que são polígonos regulares, ou seja, todos os lados e ângulos das bases são iguais. Já os prismas irregulares tem bases que são polígonos irregulares, ou seja, com lados e ângulos diferentes.</p>
+                </div>
+                <div id="prismasRetsObliqs" class="divsDefs">
+                    <h2>Prisma Obliquos e Retos</h2>
+                    <p>Um prisma é dito reto quando suas faces laterais são retângulos e os ângulos entre as faces laterais e as bases são ângulos retos. É chamdo de prisma oblíquo coso os ângulos entre as faces laterais e as bases não são ângulos retos.</p>
+                </div>
+                <div id="prismasAplicacoes" class="divsDefs">
+                    <h2>Aplicações</h2>
+                    <p>Os prismas têm diversas aplicações no cotidiano e na engenharia, como embalagens retangulares, caixas, edifícios, colunas e até mesmo algumas formas de pirâmides podem ser consideradas prismas.</p>
+                </div>
+            </div>
+            <div class="obj_conteiner_1">
+                <div class="obj_title_1">Prismas</div>
+                <div class="content_conteiner_1">
+                    <div class="config_1">
+                        <div class="config_content_conteiner_items_1">
+                            <div class="config_title_1">Configurações dos parâmetros</div>
+                            <br />
+                            <br />
+                            <div id="idLabel_1" class="label_1">Número de lados da base: n = 1</div>
+                            <input id="idRange_1" type="range" class="inp_raio_1" min="3" max="20" value="3" />
+                            <br />
+                            <br />
+                            <div id="idLabel_2" class="label_1">Raio da base: r = 1</div>
+                            <input id="idRange_2" type="range" class="inp_raio_2" min="1" max="100" value="50" />
+                            <br />
+                            <br />
+                            <div id="idLabel_4" class="label_1">Lado da base: Lb = 1</div>
+                            <input id="idRange_4" type="range" class="inp_Lb_1" min="1" max="100" value="50" />
+                            <br />
+                            <br />
+                            <div id="idLabel_3" class="label_1">Altura: h = 1</div>
+                            <input id="idRange_3" type="range" class="inp_h_1" min="1" max="100" value="50" />
+                            <br />
+                            <br />
+                            <div id="idLabel_5" class="label_1">Apótema da base: ab = 1</div>
+                            <input id="idRange_5" type="range" class="inp_ab_1" min="1" max="100" value="50" />
+                        </div>
+                    </div>
+                    <div id="idD3_viewer_1" class="d3_viewer_1"></div>
+                </div>
+                <br />
+                <br />
+                <div class="values_conteiner_1">
+                    <div class="values_title_1">Relações</div>
+
+                    <div id="idOutLabel_1" class="outLabels_1">Área da base: Ab = <s></s><frac1><num1>1</num1><div class="bar_1"></div><di1>2</di1></frac1><s></s> ∙ Lb ∙ ab ∙ n = <s></s><frac1><num1>1</num1><div class="bar_1"></div><di1>2</di1></frac1><s></s> ∙ <s></s><Lb1_1></Lb1_1><s></s> ∙ <s></s><ab_1></ab_1><s></s> ∙ <s></s><n1_1></n1_1><s></s>=<s></s><Ab1_1></Ab1_1></div>
+
+                    <div id="idOutLabel_5" class="outLabels_1">Área lateral (de cada face): Al = Lb * h = <s></s><Lb1_1></Lb1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Al1_1></Al1_1></div>
+
+                    <div id="idOutLabel_2" class="outLabels_1">Área lateral total: Alt = Al ∙ n = <s></s><Al1_1></Al1_1><s></s> ∙ <s></s><n1_1></n1_1><s></s> = <s></s><Alt1_1></Alt1_1></div>
+
+                    <div id="idOutLabel_3" class="outLabels_1">Área total: At = 2 ∙ Ab + Alt = 2 ∙ <s></s><Ab1_1></Ab1_1><s></s> + <s></s><Alt1_1></Alt1_1><s></s> = <s></s><At1_1></At1_1></div>
+
+                    <div id="idOutLabel_4" class="outLabels_1">Volume total: Vt = Ab ∙ h = <s></s><Ab1_1></Ab1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Vt1_1></Vt1_1></div>
+
+                    <div id="idOutLabel_6" class="outLabels_1">Número de vértices: V = n ∙ 2 = <s></s><n1_1></n1_1><s></s> ∙ 2 = <s></s><nV1_1></nV1_1></div>
+
+                    <div id="idOutLabel_7" class="outLabels_1">Número de faces: F = n + 2 = <s></s><n1_1></n1_1><s></s> + 2 = <s></s><nF1_1></nF1_1></div>
+
+                    <div id="idOutLabel_8" class="outLabels_1">Número de arestas: A = n ∙ 3 = <s></s><n1_1></n1_1><s></s> ∙ 3 = <s></s><nA1_1></nA1_1></div>
+
+                    <div id="idOutLabel_9" class="outLabels_1">Relação de Euler: V + F = A + 2 = <s></s><nV1_1></nV1_1><s></s> + <s></s><nF1_1></nF1_1><s></s> = <s></s><nA1_1></nA1_1><s></s> + 2</div>
+                </div>
+            </div>
+        </div>
+        <script src="../scripts/paralelepipedos_1.js" type="module"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    </body>
+</html>

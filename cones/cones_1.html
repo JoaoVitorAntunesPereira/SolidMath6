@@ -8,7 +8,34 @@
     </head>
     <body>
         <div class="main_2">
-            <div class="obj_conteiner_1">
+                <div class="obj_conteiner_2 cones">
+                    <div class="obj_title_1">Cones</div>
+                    <div id="conesDef" class="divsDefs">
+                        <h2>Definição</h2>
+                        <p>Cones são sólidos geométricos tridimensionais que possuem uma base circular e um único vértice (ou ápice) que está conectado ao centro da base por uma superfície curva chamada de superfície lateral.</p>
+                    </div>
+                    <div id="conesElementos" class="divsDefs">
+                        <h2>Elementos do Cone</h2>
+                        <p>Os principais elementos de um cone são: base circular no plano horizontal, altura (distância entre vértice e plano da base) e superfície lateral formada por segmentos de retas do vértice à borda da base.</p>
+                    </div>
+                    <div id="conesSuperficie" class="divsDefs">
+                        <h2>Superfície Lateral</h2>
+                        <p>A superfície lateral de um cone é a região curva que liga o vértice aos pontos da borda da base, formando um cone de revolução ao girar em torno do eixo do cone.</p>
+                    </div>
+                    <div id="conesAltura" class="divsDefs">
+                        <h2>Altura e Geratriz</h2>
+                        <p>A altura de um cone é a distância entre o vértice e o plano da base. A geratriz é o segmento de reta que liga o vértice a um ponto qualquer da borda da base.</p>
+                    </div>
+                    <div id="conesClass" class="divsDefs">
+                        <h2>Classificação</h2>
+                        <p>Os cones são classificados de acordo com o ângulo formado entre a geratriz e o eixo do cone. Se a geratriz é perpendicular à base, o cone é chamado de cone reto. Caso contrário, é denominado cone oblíquo.</p>
+                    </div>
+                    <div id="conesAplicacoes" class="divsDefs">
+                        <h2>Aplicações</h2>
+                        <p>Os cones têm diversas aplicações práticas em várias áreas, como em cones de trânsito, chapéus de festa, embalagens cônicas, pirulitos, funis e estruturas arquitetônicas, como a cúpula de alguns edifícios.</p>
+                    </div>
+                </div>
+                <div class="obj_conteiner_1">
                 <div class="obj_title_1">Cones</div>
                 <div class="content_conteiner_1">
                     <div class="config_1">
@@ -16,19 +43,19 @@
                             <div class="config_title_1">Configurações dos parâmetros</div>
                             <br />
                             <br />
-                            <div id="idLabel_1" class="label_1">Raio da base: r = 1;</div>
+                            <div id="idLabel_1" class="label_1">Raio da base: r = 1</div>
                             <input id="idRange_1" type="range" class="inp_raio_2" min="1" max="100" value="35" />
                             <br />
                             <br />
-                            <div id="idLabel_2" class="label_1">Altura: h = 1;</div>
+                            <div id="idLabel_2" class="label_1">Altura: h = 1</div>
                             <input id="idRange_2" type="range" class="inp_h_1" min="1" max="100" value="70" />
                             <br />
                             <br />
-                            <div id="idLabel_4" class="label_1">Geratriz: g = 1;</div>
+                            <div id="idLabel_4" class="label_1">Geratriz: g = 1</div>
                             <input id="idRange_4" type="range" class="inp_Lb_1" min="1" max="100" value="50" />
                             <br />
                             <br />
-                            <div id="idLabel_3" class="label_1">Ângulo da seção: θ = 360 deg;</div>
+                            <div id="idLabel_3" class="label_1">Ângulo da seção: θ = 360 deg</div>
                             <input id="idRange_3" type="range" class="inp_an_1" min="1" max="360" value="360" />
                         </div>
                     </div>
@@ -38,20 +65,11 @@
                 <br />
                 <div class="values_conteiner_1">
                     <div class="values_title_1">Relações</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_1" class="outLabels_1">Área da base: Ab = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ r<power_1>2</power_1><s></s>= <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><r1_1></r1_1><power_1>2</power_1><s></s>=<s></s><Ab1_1></Ab1_1>;</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_2" class="outLabels_1">Área lateral total: Alt = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360º</di1></frac1><s></s> ∙ π ∙ g<power_1>2</power_1><s></s> = <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><g1_1></g1_1><power_1>2</power_1><s></s>=<s></s><Alt1_1></Alt1_1>;</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_3" class="outLabels_1">Área total: At = Ab + Alt = <s></s><Ab1_1></Ab1_1><s></s> + <s></s><Alt1_1></Alt1_1><s></s> = <s></s><At1_1></At1_1>;</div>
-                    <br />
-                    <br />
-                    <div id="idOutLabel_4" class="outLabels_1">Volume total: Vt = <s></s><frac1><num1>1</num1><div class="bar_1"></div><di1>3</di1></frac1><s></s> ∙ Ab ∙ h = <s></s><frac1><num1>1</num1><div class="bar_1"></div><di1>3</di1></frac1><s></s> ∙  <s></s><Ab1_1></Ab1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Vt1_1></Vt1_1>;</div>
+                    <div id="idOutLabel_1" class="outLabels_1">Área da base: Ab = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ r<power_1>2</power_1><s></s>= <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><r1_1></r1_1><power_1>2</power_1><s></s>=<s></s><Ab1_1></Ab1_1></div>
+                    <div id="idOutLabel_2" class="outLabels_1">Área lateral total: Alt = <s></s><frac1><num1>θ</num1><div class="bar_1"></div><di1>360º</di1></frac1><s></s> ∙ π ∙ g<power_1>2</power_1><s></s> = <s></s><frac1><num1><th1_1></th1_1></num1><div class="bar_1"></div><di1>360°</di1></frac1><s></s> ∙ π ∙ <s></s><g1_1></g1_1><power_1>2</power_1><s></s>=<s></s><Alt1_1></Alt1_1></div>
+                    <div id="idOutLabel_3" class="outLabels_1">Área total: At = Ab + Alt = <s></s><Ab1_1></Ab1_1><s></s> + <s></s><Alt1_1></Alt1_1><s></s> = <s></s><At1_1></At1_1></div>
+                    <div id="idOutLabel_4" class="outLabels_1">Volume total: Vt = <s></s><frac1><num1>1</num1><div class="bar_1"></div><di1>3</di1></frac1><s></s> ∙ Ab ∙ h = <s></s><frac1><num1>1</num1><div class="bar_1"></div><di1>3</di1></frac1><s></s> ∙  <s></s><Ab1_1></Ab1_1><s></s> ∙ <s></s><h1_1></h1_1><s></s> = <s></s><Vt1_1></Vt1_1></div>
                 </div>
-                <br />
             </div>
         </div>
         <script src="../scripts/cones_1.js" type="module"></script>
